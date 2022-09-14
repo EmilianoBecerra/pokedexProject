@@ -1,0 +1,345 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+p {
+  font-weight: bold;
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px; }
+
+span {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px; }
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  body .completo {
+    display: flex;
+    flex-flow: row nowrap; }
+    body .completo .pokedex {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      border: 5px solid black;
+      border-style: ridge;
+      width: 300px;
+      height: 500px;
+      border-radius: 20px;
+      margin-top: 30px;
+      background-color: #cc1d41; }
+      body .completo .pokedex .botoncitos {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-items: flex-start; }
+        body .completo .pokedex .botoncitos .dot {
+          height: 50px;
+          width: 50px;
+          margin: 10px 4px 0px 20px;
+          background-color: lightblue;
+          border: 3px solid white;
+          border-radius: 50%;
+          animation-name: pokebola;
+          animation-iteration-count: infinite;
+          animation-duration: 1s; }
+        body .completo .pokedex .botoncitos .dot1 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: 5px 5px 5px 0px;
+          background-color: #5c585c; }
+        body .completo .pokedex .botoncitos .dot2 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: 5px 5px 5px 0px;
+          background-color: #5c585c; }
+        body .completo .pokedex .botoncitos .dot3 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: 5px 5px 5px 0px;
+          background-color: #5c585c; }
+      body .completo .pokedex .imagen {
+        height: 220px;
+        width: 220px;
+        background-color: #5c585c;
+        margin-top: 50px;
+        border: 20px solid white;
+        border-radius: 10% 10% 3% 30%; }
+        body .completo .pokedex .imagen .tamaño {
+          width: 150px;
+          height: 150px;
+          margin: 20px;
+          animation-name: imagen;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-delay: 0.7s; }
+      body .completo .pokedex .grupo {
+        display: flex;
+        flex-flow: row nowrap; }
+        body .completo .pokedex .grupo .dot4 {
+          height: 25px;
+          width: 25px;
+          background-color: #212021;
+          border: 2px solid black;
+          border-radius: 50%;
+          margin: 20px 0px 5px -100px; }
+        body .completo .pokedex .grupo .tecla1 {
+          height: 5px;
+          width: 50px;
+          margin-left: 5px;
+          margin-top: 25px;
+          border-radius: 10px;
+          background-color: red; }
+        body .completo .pokedex .grupo .tecla2 {
+          height: 5px;
+          width: 50px;
+          margin-left: 5px;
+          margin-top: 25px;
+          border-radius: 10px;
+          background-color: lightblue; }
+      body .completo .pokedex .pantallaVerde {
+        height: 45px;
+        width: 110px;
+        border-radius: 5px;
+        background-color: #22ab09;
+        margin-left: -130px;
+        margin-top: 20px;
+        animation-name: pantallaVerde;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite; }
+      body .completo .pokedex .flechas {
+        margin-top: -70px;
+        margin-left: 250px; }
+        body .completo .pokedex .flechas .horizontal {
+          display: flex;
+          flex-flow: row nowrap;
+          margin-top: 40px;
+          margin-right: 95px; }
+          body .completo .pokedex .flechas .horizontal .horizontalDerecha {
+            height: 25px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: #252525;
+            border: none;
+            text-align: center;
+            padding: 2px;
+            border-left: 1px solid white; }
+            body .completo .pokedex .flechas .horizontal .horizontalDerecha:hover {
+              background-color: #313131; }
+          body .completo .pokedex .flechas .horizontal .horizontalIzquierda {
+            height: 25px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: #252525;
+            border: none;
+            text-align: center;
+            padding: 2px; }
+            body .completo .pokedex .flechas .horizontal .horizontalIzquierda:hover {
+              background-color: #313131; }
+        body .completo .pokedex .flechas .vertical {
+          display: flex;
+          flex-flow: column nowrap;
+          margin-left: 25px;
+          margin-top: -54px; }
+          body .completo .pokedex .flechas .vertical .verticalArriba {
+            height: 25px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: #252525;
+            transform: rotate(90deg);
+            border: none;
+            text-align: center;
+            padding: 2px;
+            margin-bottom: 30px;
+            border-right: 1px solid white; }
+            body .completo .pokedex .flechas .vertical .verticalArriba:hover {
+              background-color: #313131; }
+          body .completo .pokedex .flechas .vertical .verticalAbajo {
+            height: 25px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: #252525;
+            transform: rotate(90deg);
+            border: none;
+            text-align: center;
+            padding: 2px;
+            border-left: 1px solid white; }
+            body .completo .pokedex .flechas .vertical .verticalAbajo:hover {
+              background-color: #313131; }
+  body .logo {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 595px;
+    animation-name: logoDiv;
+    animation-duration: 0.7s; }
+    body .logo .imagenLogo {
+      width: 0px;
+      animation-name: logo;
+      animation-duration: 0.7s; }
+  body .tapaPoke {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border: 5px solid black;
+    border-style: ridge;
+    border-left: none;
+    border-radius: 20px;
+    margin: 70px 0px 0px -5px;
+    background-color: #cc1d41; }
+    body .tapaPoke .nombre {
+      width: 200px;
+      height: auto;
+      margin-top: 50px;
+      text-align: center;
+      color: black; }
+    body .tapaPoke .cajaBusqueda {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      body .tapaPoke .cajaBusqueda .busqueda {
+        display: block;
+        width: auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+        font-size: 10px; }
+      body .tapaPoke .cajaBusqueda .boton {
+        width: auto;
+        height: 30px;
+        border-radius: 2px;
+        color: white;
+        background-color: #212021;
+        margin-bottom: 5px;
+        font-size: 12px;
+        padding: 5px; }
+        body .tapaPoke .cajaBusqueda .boton:hover {
+          background-color: #313131; }
+
+@keyframes pokebola {
+  from {
+    background-color: white; }
+  to {
+    background-color: lightblue; } }
+@keyframes imagen {
+  100% {
+    transform: rotate(360deg); } }
+@keyframes pantallaVerde {
+  from {
+    background-color: #22ab09; }
+  to {
+    background-color: #142a10; } }
+@keyframes logo {
+  5% {
+    width: 50px; }
+  10% {
+    width: 100px; }
+  15% {
+    width: 200px; }
+  20% {
+    width: 300px; }
+  25% {
+    width: 400px; }
+  30% {
+    width: 500px; }
+  35% {
+    width: 600px; }
+  40% {
+    width: 700px; }
+  45% {
+    width: 800px; }
+  50% {
+    width: 900px; }
+  55% {
+    width: 1000px; }
+  60% {
+    width: 1100px; }
+  65% {
+    width: 1200px; }
+  70% {
+    width: 1300px; }
+  75% {
+    width: 1400px; }
+  80% {
+    width: 1500px; }
+  85% {
+    width: 1600px; }
+  90% {
+    width: 1700px; }
+  95% {
+    width: 1800px; }
+  100% {
+    width: 1900px; } }
+@keyframes logoDiv {
+  5% {
+    top: 190px;
+    left: 650px; }
+  10% {
+    top: 180px;
+    left: 600px; }
+  15% {
+    top: 170px;
+    left: 550px; }
+  20% {
+    top: 160px;
+    left: 500px; }
+  25% {
+    top: 150px;
+    left: 450px; }
+  30% {
+    top: 140px;
+    left: 400px; }
+  35% {
+    top: 130px;
+    left: 350px; }
+  40% {
+    top: 120px;
+    left: 300px; }
+  45% {
+    top: 110px;
+    left: 250px; }
+  50% {
+    top: 100px;
+    left: 200px; }
+  55% {
+    top: 90px;
+    left: 150px; }
+  60% {
+    top: 80px;
+    left: 100px; }
+  65% {
+    top: 70px;
+    left: 50px; }
+  70% {
+    top: 60px;
+    left: 00px; }
+  75% {
+    top: 50px;
+    left: -50px; }
+  80% {
+    top: 40px;
+    left: -100px; }
+  85% {
+    top: 30px;
+    left: -150px; }
+  90% {
+    top: 20px;
+    left: -200px; }
+  95% {
+    top: 10px;
+    left: -250px; }
+  100% {
+    top: 00px;
+    left: -300px; } }
+
+/*# sourceMappingURL=index.css.map */
