@@ -21,3 +21,12 @@ const baseURL = ()=> {
 }
 
 
+	let inicio = 0;
+
+	function aumentar(){
+		let cantidad = document.getElementById("pokemon").value = ++inicio;
+	}
+
+	function disminuir (){
+		let cantidad = document.getElementById("pokemon").value = --inicio;
+	}
