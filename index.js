@@ -6,8 +6,8 @@ const baseURL = ()=> {
 	fetch(url)
 		.then((response => response.json()))
 		.then(myJson =>{
-			let element = document.getElementById('poke-table')
-			document.getElementById("img").src = myJson.sprites.front_default;
+			let element = document.getElementById('poke-table');
+			let imagen = document.getElementById("img").src = myJson.sprites.front_default;
 			arrValue.push(myJson.name);
 			arrValue.push(myJson.id);
 			arrValue.push(myJson.types[0].type.name);
@@ -19,14 +19,15 @@ const baseURL = ()=> {
 
 		})
 }
-
-
+	
 	let inicio = 0;
-
 	function aumentar(){
-		let cantidad = document.getElementById("pokemon").value = ++inicio;
+		let cantidadAumentada = document.getElementById("pokemon").value = ++ inicio;
 	}
 
 	function disminuir (){
-		let cantidad = document.getElementById("pokemon").value = --inicio;
-	}
+		let cantidadDisminuida = document.getElementById("pokemon").value = --inicio;
+	}	
+
+
+

@@ -32,15 +32,15 @@
 			</div>
 			<div class="flechas">
 				<div class="horizontal">
-					<button class="horizontalIzquierda" onclick="disminuir()">
+					<button class="horizontalIzquierda" type="button" onclick="disminuir()">
 							<
 					</button>
-					<button class="horizontalDerecha" onclick="aumentar()">
+					<button class="horizontalDerecha" type="button" onclick="aumentar()">
 							>
 					</button>
 				</div>
 				<div class="vertical">
-					<button class="verticalArriba">
+					<button class="verticalArriba" onclick="arriba()">
 						<
 					</button>
 					<button class="verticalAbajo">
@@ -68,7 +68,7 @@
 				</p><br>
 			</div>
 			<div class="cajaBusqueda">
-				<input type="texto" placeholder="Ingresa nombre o id pokemon" id="pokemon" class="busqueda">
+				<input type="text" placeholder="Ingresa nombre o id pokemon" id="pokemon" class="busqueda">
 				<button class="boton" onclick="baseURL()">Buscar</button>
 			</div>
 		</div>
