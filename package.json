@@ -11,5 +11,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilianoBecerra/pokedexProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmilianoBecerra/pokedexProject/issues"
+  },
+  "homepage": "https://github.com/EmilianoBecerra/pokedexProject#readme",
   "description": ""
 }
